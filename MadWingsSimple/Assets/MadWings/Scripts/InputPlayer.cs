@@ -7,7 +7,7 @@ namespace RainbowWhale
 {
 	[RequireComponent(typeof(Controller2D))]
 	public class InputPlayer : MonoBehaviour
-    {
+	{
 	    public float moveSpeed;
 
 		private Touch touch;

@@ -122,6 +122,7 @@ namespace RainbowWhale
 			return null;
 		}
 
+
 		public void SetParent(Transform parent)
 		{
 			parentPool = parent;

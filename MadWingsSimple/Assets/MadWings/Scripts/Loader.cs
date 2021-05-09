@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace RainbowWhale
@@ -6,6 +7,7 @@ namespace RainbowWhale
 	[Serializable]
 	public class PoolObjects
 	{
+		public GameObject player;
 		public GameObject bullet_1;
 		public GameObject enemy_1;
 	}
@@ -16,7 +18,8 @@ namespace RainbowWhale
 
 	    private void Awake()
 	    {
-		    GetPool(PoolType.Bullets, poolObjects.bullet_1, 50);
+		    GetPool(PoolType.Player, poolObjects.player, 1);
+			GetPool(PoolType.Bullets, poolObjects.bullet_1, 50);
 		    GetPool(PoolType.Enemys, poolObjects.enemy_1, 50);
 	    }
 

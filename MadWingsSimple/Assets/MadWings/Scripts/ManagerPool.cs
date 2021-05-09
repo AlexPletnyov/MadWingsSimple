@@ -12,10 +12,10 @@ namespace RainbowWhale
 		{
 			Pool pool;
 
-			if (pools.TryGetValue((int) id, out pool) == false)
+			if (pools.TryGetValue((int)id, out pool) == false)
 			{
 				pool = new Pool();
-				pools.Add((int) id, pool);
+				pools.Add((int)id, pool);
 
 				if (reparent)
 				{
@@ -25,26 +25,25 @@ namespace RainbowWhale
 					pool.SetParent(poolGO.transform);
 				}
 			}
-
 			return pool;
 		}
 
 		public GameObject Spawn(PoolType id, GameObject prefab, Vector3 position = default(Vector3),
-								Quaternion rotation = default(Quaternion), Transform parent = null)
+			Quaternion rotation = default(Quaternion), Transform parent = null)
 		{
-			return pools[(int) id].Spawn(prefab, position, rotation, parent);
+			return pools[(int)id].Spawn(prefab, position, rotation, parent);
 		}
 
 		public T Spawn<T>(PoolType id, GameObject prefab, Vector3 position = default(Vector3),
-							Quaternion rotation = default(Quaternion), Transform parent = null) where T : class
+			Quaternion rotation = default(Quaternion), Transform parent = null) where T : class
 		{
-			var val = pools[(int) id].Spawn(prefab, position, rotation, parent);
+			var val = pools[(int)id].Spawn(prefab, position, rotation, parent);
 			return val.GetComponent<T>();
 		}
 
 		public void Despawn(PoolType id, GameObject obj)
 		{
-			pools[(int) id].Despawn(obj);
+			pools[(int)id].Despawn(obj);
 		}
 
 		public void Dispose()
