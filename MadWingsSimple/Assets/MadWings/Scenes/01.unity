@@ -581,6 +581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2013998631}
   - component: {fileID: 2013998630}
+  - component: {fileID: 2013998632}
   m_Layer: 0
   m_Name: '[LOADER]'
   m_TagString: Untagged
@@ -602,8 +603,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolObjects:
     player: {fileID: 5148055395840018175, guid: 513ba12466e27264da83df4bf41504be, type: 3}
-    bullet_1: {fileID: 3938979152141731905, guid: 36758a4815d9e0247bf255a1c322aab0, type: 3}
+    bullet_1: {fileID: 5056135367035965422, guid: 36758a4815d9e0247bf255a1c322aab0, type: 3}
     enemy_1: {fileID: 5153706832696026473, guid: 3fc72ed33d650ac45ac73c540971b770, type: 3}
+    waves:
+    - {fileID: 4471715076936856535, guid: 38cfa113db5120949a6be4edd4be6f8e, type: 3}
+    - {fileID: 4173961589108352103, guid: d0b2af7c67bcc2145a1d4bffaa2f83ba, type: 3}
+    - {fileID: 2933106402985909579, guid: 8522434a00047cf4ba16fdc94db8ca85, type: 3}
 --- !u!4 &2013998631
 Transform:
   m_ObjectHideFlags: 0
@@ -618,3 +623,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2013998632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013998629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee3db80aca0ad74f85f29803207c08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEndWaves: 0
