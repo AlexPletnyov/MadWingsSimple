@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8083081839455941459}
   - component: {fileID: 2687697699120936964}
   - component: {fileID: 3172763194467115432}
+  - component: {fileID: -4716467651853733339}
+  - component: {fileID: 6523412285152238368}
   m_Layer: 0
   m_Name: BulletPlayer_1
   m_TagString: BulletPlayer
@@ -93,7 +95,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38e4d9dc7192984cad1928cc70f1d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  poolType: 4
+  damage: 2
+  isPoolObject: 1
+--- !u!114 &-4716467651853733339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5136423472682325137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debc14c42fb4d4240b9f8016c726f76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6523412285152238368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5136423472682325137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98d522a8511dc04e82e31c5990699d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 1
+  speed: 10
 --- !u!1 &8925811461242909084
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +196,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: e2fc1a4a6c771384ebe2ba5f77112ae0, type: 3}
-  m_Color: {r: 0.16794233, g: 0.8646884, b: 0.9622642, a: 1}
+  m_Color: {r: 0, g: 0.9256772, b: 0.9528302, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

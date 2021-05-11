@@ -7,7 +7,7 @@ namespace RainbowWhale
 {
     public class Health : MonoBehaviour
     {
-	    public int point;
+	    public float point;
 
 	    private Actor actor;
 
@@ -16,7 +16,7 @@ namespace RainbowWhale
 		    actor = GetComponent<Actor>();
 	    }
 
-	    public void GetDamage(int damage)
+	    public void GetDamage(float damage)
 	    {
 		    point -= damage;
 
@@ -28,7 +28,15 @@ namespace RainbowWhale
 
 	    public void Destruction()
 	    {
-		    ManagerPool.Instance.Despawn(actor.poolType, gameObject);
+		    if (actor.isPoolObject)
+		    {
+				ManagerPool.Instance.Despawn(actor.poolType, gameObject);
+			}
+		    else
+		    {
+			    Destroy(gameObject);
+		    }
+		    
 		}
     }
 }

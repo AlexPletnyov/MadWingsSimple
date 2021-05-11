@@ -7,9 +7,6 @@ namespace RainbowWhale
 	[RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
     public class Controller2D : MonoBehaviour
     {
-	    [HideInInspector]
-	    public float speed;
-
 	    private Rigidbody2D rb2d;
 
 	    private void Awake()
@@ -29,12 +26,12 @@ namespace RainbowWhale
 		    rb2d.MoveRotation(angle);
 	    }
 
-	    public void MoveAxisX()
+	    public void MoveAxisX(float speed)
 	    {
 		    rb2d.velocity = transform.right * speed;
 	    }
 
-	    public void MoveAxisY()
+	    public void MoveAxisY(float speed)
 	    {
 		    rb2d.velocity = transform.up * speed;
 	    }

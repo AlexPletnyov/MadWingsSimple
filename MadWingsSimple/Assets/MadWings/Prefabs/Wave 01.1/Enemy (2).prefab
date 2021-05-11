@@ -179,7 +179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc14c42fb4d4240b9f8016c726f76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
 --- !u!114 &900368175201204343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolType: 1
   damage: 1
+  isPoolObject: 0
 --- !u!114 &5963769687878107603
 MonoBehaviour:
   m_ObjectHideFlags: 0

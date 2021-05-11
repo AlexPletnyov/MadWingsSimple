@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 9168166997838260909}
   - component: {fileID: 5964338900365279989}
   - component: {fileID: 1373328868738668244}
+  - component: {fileID: -7096293905977777046}
+  - component: {fileID: 8274370421990132762}
   m_Layer: 0
   m_Name: BulletEnemy_1
   m_TagString: BulletEnemy
@@ -176,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38e4d9dc7192984cad1928cc70f1d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolType: 0
+  poolType: 5
   damage: 1
 --- !u!114 &1373328868738668244
 MonoBehaviour:
@@ -191,3 +193,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
+--- !u!114 &-7096293905977777046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5056135367035965422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debc14c42fb4d4240b9f8016c726f76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8274370421990132762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5056135367035965422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98d522a8511dc04e82e31c5990699d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 1
+  speed: -15

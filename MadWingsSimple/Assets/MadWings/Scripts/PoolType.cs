@@ -5,6 +5,8 @@ namespace RainbowWhale
 		Bullets = 0,
 		Enemys = 1,
 		Player = 2,
-		Wave = 3
+		Wave = 3,
+		BulletPlayer = 4,
+		BulletEnemy = 5
 	}
 }

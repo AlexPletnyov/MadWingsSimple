@@ -8,7 +8,8 @@ namespace RainbowWhale
     public class Actor : MonoBehaviour, IPoolable
     {
 	    public PoolType poolType;
-	    public int damage;
+	    public float damage;
+	    public bool isPoolObject = true;
 
 	    public void OnSpawn()
 	    {

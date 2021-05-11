@@ -22,7 +22,7 @@ namespace RainbowWhale
 		{
 			loader = GetComponent<Loader>();
 			enemys = new List<GameObject>();
-			numberWaves = loader.poolObjects.waves.Length;
+			numberWaves = loader.waves.Length;
 		}
 
 		private void Update()
@@ -42,7 +42,7 @@ namespace RainbowWhale
 		{
 			if (!isSpawned)
 			{
-				activeWave = ManagerPool.Instance.Spawn(PoolType.Wave, loader.poolObjects.waves[currentWave]);
+				activeWave = ManagerPool.Instance.Spawn(PoolType.Wave, loader.waves[currentWave]);
 				GetEnemyList(activeWave);
 				isSpawned = true;
 			}
